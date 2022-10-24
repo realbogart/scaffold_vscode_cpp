@@ -5,7 +5,11 @@
             "label": "Build & Run Ninja Clang",
             "command": "scripts/build_and_run_ninja_clang.bat",
             "type": "shell",
-            "args": ["${workspaceFolder}/build/ninja_clang", "${workspaceFolder}/install/ninja_clang"],
+            "args": [
+                "${workspaceFolder}/build/ninja_clang", 
+                "${workspaceFolder}/install/ninja_clang",
+                "${workspaceFolder}/build/ninja_clang/${config:ninja_output_binary_name}",
+            ],
             "presentation": {
                 "echo": true,
                 "focus": true,
