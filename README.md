@@ -20,3 +20,10 @@ In order for the `Build & Run Ninja Clang` task to work, update `ninja_output_bi
 }
 
 ```
+
+## 3. Build
+
+```bash
+cmake . -B build/vscode_cmake
+cmake --build build/vscode_cmake
+```
