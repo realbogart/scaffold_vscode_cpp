@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build & Run Ninja Clang",
+            "command": "scripts/build_and_run_ninja_clang.bat",
+            "type": "shell",
+            "args": ["${workspaceFolder}/build/ninja_clang", "${workspaceFolder}/install/ninja_clang"],
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "showReuseMessage": true,
+                "clear": true,
+                "close": false,
+                "panel": "shared",
+                "reveal": "always"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Install Ninja Clang",
+            "command": "scripts/install_ninja_clang.bat",
+            "type": "shell",
+            "args": ["${workspaceFolder}/build/ninja_clang", "${workspaceFolder}/install/ninja_clang"],
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "showReuseMessage": true,
+                "clear": true,
+                "close": false,
+                "panel": "shared",
+                "reveal": "always"
+            },
+            "group": {
+                "kind": "build"
+            }
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 {
-    "cmake.buildDirectory": "${workspaceFolder}/build",
-    "cmake.configureOnEdit": false,
-    "cmake.installPrefix": "${workspaceFolder}/install"
+    "cmake.buildDirectory": "${workspaceFolder}/build/vscode_cmake",
+    "cmake.installPrefix": "${workspaceFolder}/install/vscode_cmake",
+    "cmake.configureOnEdit": false
 }

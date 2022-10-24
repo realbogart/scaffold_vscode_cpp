@@ -1,0 +1,1 @@
+cmake -G Ninja -B %1 -S . --install-prefix %2 && cmake --build %1 --config Debug && cls && %1/scaffold.exe
