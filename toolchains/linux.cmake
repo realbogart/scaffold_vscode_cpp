@@ -1,8 +1,0 @@
-set(CMAKE_SYSTEM_NAME Linux)
-# set(CMAKE_SYSROOT "${CMAKE_SOURCE_DIR}/dependencies/wasi-sysroot")
-# set(CMAKE_C_COMPILE_OPTIONS_SYSROOT "--sysroot=")
-# set(CMAKE_CXX_COMPILE_OPTIONS_SYSROOT "--sysroot=")
-set(CMAKE_C_COMPILER "clang")
-set(CMAKE_CXX_COMPILER "clang++")
-set(CMAKE_CXX_FLAGS "-O2 -Wall -Wextra -Wpedantic -Wshadow -Wconversion -Werror -Wno-unused-command-line-argument")
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
