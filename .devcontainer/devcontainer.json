@@ -1,0 +1,6 @@
+{
+    "name": "cppdev",
+    "dockerComposeFile": "./docker-compose.yml",
+    "service": "cpp",
+    "workspaceFolder": "/home/work"
+}

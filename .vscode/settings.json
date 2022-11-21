@@ -1,6 +1,0 @@
-{
-    "ninja_output_binary_name": "scaffold",
-    "cmake.buildDirectory": "${workspaceFolder}/build/vscode_cmake",
-    "cmake.installPrefix": "${workspaceFolder}/install/vscode_cmake",
-    "cmake.configureOnEdit": false
-}

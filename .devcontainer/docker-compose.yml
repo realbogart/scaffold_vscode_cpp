@@ -1,0 +1,10 @@
+services:
+  cpp:
+    build: .
+    image: cppdev
+    volumes:
+      - ../:/home/work
+    working_dir: /home/work
+    entrypoint: bash
+    stdin_open: true
+    tty: true

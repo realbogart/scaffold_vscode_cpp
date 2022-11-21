@@ -1,1 +1,0 @@
-cmake -G Ninja -B %1 -S . --install-prefix %2 && cmake --build %1 --config Release && cmake --install %1 --config Release
