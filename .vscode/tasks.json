@@ -21,7 +21,29 @@
             "group": {
                 "kind": "build",
                 "isDefault": false
-            }
+            },
+        },
+        {
+            "label": "Clean",
+            "command": "bash",
+            "type": "shell",
+            "args": [
+                "-c",
+                "rm -rf build"
+            ],
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "showReuseMessage": true,
+                "clear": true,
+                "close": false,
+                "panel": "shared",
+                "reveal": "always"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
         }
     ]
 }
