@@ -14,9 +14,9 @@ code .
 ```
 
 ## 3. Update project settings
-Change the project name in `settings.json`:
+Change the project name in `CMakeLists.txt`:
 ```CMake
-set(PROJECT_NAME "scaffold")
+project(my_scaffolded_project)
 ```
 
 ## 3. Build
