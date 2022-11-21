@@ -6,8 +6,6 @@ endif()
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-include("settings.cmake")
-
 project(my_scaffolded_project)
 
 add_executable(${PROJECT_NAME})

@@ -25,7 +25,7 @@ RUN apt install -y pip cmake git ninja-build clang-format
 RUN pip3 install conan
 
 # 
-# Setup environment variables for CMake compiler detection and symbolic links
+# Setup environment variables for CMake compiler detection and some symbolic links
 # 
 
 RUN ln -s /usr/bin/clang-15 /usr/bin/clang
@@ -34,3 +34,9 @@ RUN ln -s /usr/bin/ninja /usr/local/bin/ninja
 
 ENV CC=/usr/bin/clang
 ENV CXX=/usr/bin/clang++
+
+# 
+# Prepare build scripts
+# 
+
+CMD chmod +x /home/work/scripts/*
