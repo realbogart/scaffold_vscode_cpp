@@ -44,6 +44,72 @@
                 "kind": "build",
                 "isDefault": false
             },
+        },
+        {
+            "label": "Build Release",
+            "command": "bash",
+            "type": "shell",
+            "args": [
+                "-c",
+                "./scripts/build_release.sh"
+            ],
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "showReuseMessage": true,
+                "clear": true,
+                "close": false,
+                "panel": "shared",
+                "reveal": "always"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        },
+        {
+            "label": "Build Debug",
+            "command": "bash",
+            "type": "shell",
+            "args": [
+                "-c",
+                "./scripts/build_debug.sh"
+            ],
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "showReuseMessage": true,
+                "clear": true,
+                "close": false,
+                "panel": "shared",
+                "reveal": "always"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+        },
+        {
+            "label": "Install",
+            "command": "bash",
+            "type": "shell",
+            "args": [
+                "-c",
+                "./scripts/install.sh"
+            ],
+            "presentation": {
+                "echo": true,
+                "focus": true,
+                "showReuseMessage": true,
+                "clear": true,
+                "close": false,
+                "panel": "shared",
+                "reveal": "always"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
         }
     ]
 }
