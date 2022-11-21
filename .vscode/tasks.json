@@ -29,14 +29,14 @@
             "type": "shell",
             "args": [
                 "-c",
-                "rm -rf build"
+                "./scripts/clean.sh"
             ],
             "presentation": {
                 "echo": true,
                 "focus": true,
                 "showReuseMessage": true,
                 "clear": true,
-                "close": false,
+                "close": true,
                 "panel": "shared",
                 "reveal": "always"
             },
