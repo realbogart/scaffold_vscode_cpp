@@ -3,7 +3,11 @@ os=Linux
 arch=x86_64
 compiler=clang
 compiler.version=15
+compiler.cppstd=20
+compiler.libcxx=libstdc++11
 build_type=Debug
 [options]
 [tool_requires]
 [env]
+CC=/usr/bin/clang
+CXX=/usr/bin/clang++

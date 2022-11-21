@@ -9,7 +9,8 @@
                 "ms-vscode.cpptools",
                 "twxs.cmake",
                 "hars.cppsnippets",
-                "jeff-hykin.better-cpp-syntax"
+                "jeff-hykin.better-cpp-syntax",
+                "xaver.clang-format"
             ]
         }
     }

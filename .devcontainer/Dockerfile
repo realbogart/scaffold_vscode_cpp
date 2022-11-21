@@ -6,5 +6,8 @@ RUN bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
 RUN ln -s /usr/bin/clang-15 /usr/bin/clang
 RUN ln -s /usr/bin/clang++-15 /usr/bin/clang++
 
-RUN apt install -y pip cmake git
+RUN apt install -y pip cmake git clang-format
 RUN pip3 install conan ninja
+
+ENV CC=/usr/bin/clang
+ENV CXX=/usr/bin/clang++
