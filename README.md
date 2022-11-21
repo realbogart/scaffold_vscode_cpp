@@ -2,9 +2,18 @@ Quickly create the scaffolding for a [vscode](https://code.visualstudio.com/) C+
 
 ## 0. (Optional) Prerequisites
 
+* Install the `Dev Containers` extension in vscode. (Identifier: `
+ms-vscode-remote.remote-containers`)
+
 ## 1. Create a new repository using this template
 
-## 2. Update project settings
+## 2. Clone the repository and open it in vscode
+Navigate to your cloned repository in a terminal and run:
+```
+code .
+```
+
+## 3. Update project settings
 Change the project name in `settings.json`:
 ```CMake
 set(PROJECT_NAME "scaffold")
