@@ -7,8 +7,6 @@ FROM debian:bookworm-slim
 RUN apt update && apt upgrade -y
 RUN apt install -y lsb-release wget software-properties-common gnupg2
 RUN bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
-RUN ln -s /usr/bin/clang-15 /usr/bin/clang
-RUN ln -s /usr/bin/clang++-15 /usr/bin/clang++
 
 # 
 # Set up repository for clang tools
@@ -27,8 +25,12 @@ RUN apt install -y pip cmake git ninja-build clang-format
 RUN pip3 install conan
 
 # 
-# Setup environment for CMake compiler detection
+# Setup environment variables for CMake compiler detection and symbolic links
 # 
+
+RUN ln -s /usr/bin/clang-15 /usr/bin/clang
+RUN ln -s /usr/bin/clang++-15 /usr/bin/clang++
+RUN ln -s /usr/bin/ninja /usr/local/bin/ninja
 
 ENV CC=/usr/bin/clang
 ENV CXX=/usr/bin/clang++
