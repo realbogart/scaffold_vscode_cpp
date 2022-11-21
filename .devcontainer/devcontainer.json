@@ -2,5 +2,15 @@
     "name": "cppdev",
     "dockerComposeFile": "./docker-compose.yml",
     "service": "cpp",
-    "workspaceFolder": "/home/work"
+    "workspaceFolder": "/home/work",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "twxs.cmake",
+                "hars.cppsnippets",
+                "jeff-hykin.better-cpp-syntax"
+            ]
+        }
+    }
 }

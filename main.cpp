@@ -1,8 +1,7 @@
-#include <iostream>
+#include <fmt/core.h>
 
 int main(/*int argc, char* argv[]*/)
 {
-    std::cout << "Hello scaffoldz" << std::endl;
-
+    fmt::print("Hello scaffoldz!\n");
     return 0;
 }

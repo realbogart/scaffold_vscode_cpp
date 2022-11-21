@@ -17,6 +17,13 @@ target_sources(${PROJECT_NAME}
     main.cpp
 )
 
+find_package(fmt CONFIG REQUIRED)
+
+target_link_libraries(${PROJECT_NAME}
+  PRIVATE
+    fmt::fmt
+)
+
 install(
     TARGETS ${PROJECT_NAME}
     CONFIGURATIONS Release

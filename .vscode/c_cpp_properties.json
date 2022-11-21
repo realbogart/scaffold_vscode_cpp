@@ -1,0 +1,9 @@
+{
+    "configurations": [
+        {
+            "compilerPath": "/usr/bin/clang",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}
