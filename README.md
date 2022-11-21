@@ -1,6 +1,12 @@
-Quickly create the scaffolding for a [vscode](https://code.visualstudio.com/) C++ project using [CMake](https://cmake.org/).
+Quickly create scaffolding for a [vscode](https://code.visualstudio.com/) C++ project using the following toolchain:
 
-## 0. (Optional) Prerequisites
+* [Docker](https://www.docker.com/)
+* [Conan](https://conan.io/)
+* [CMake](https://cmake.org/)
+* [Ninja](https://ninja-build.org/)
+* [Clang](https://clang.llvm.org/)
+
+## 0. Prerequisites
 
 * Install the `Dev Containers` extension in vscode. (Identifier: `
 ms-vscode-remote.remote-containers`)
