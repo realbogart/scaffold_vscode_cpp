@@ -8,8 +8,6 @@ compiler.libcxx=libstdc++11
 build_type=Release
 [conf]
 tools.build:cxxflags=['-O2', '-Wall', '-Wextra', '-Wpedantic', '-Wshadow', '-Wconversion', '-Werror', '-Wno-unused-command-line-argument']
-[options]
-[tool_requires]
-[env]
+[buildenv]
 CC=/usr/bin/clang
 CXX=/usr/bin/clang++
