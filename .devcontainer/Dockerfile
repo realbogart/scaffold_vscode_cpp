@@ -21,8 +21,10 @@ RUN apt update
 # Install other dependencies
 # 
 
+RUN wget http://mirrors.kernel.org/ubuntu/pool/main/libf/libffi/libffi6_3.2.1-8_amd64.deb
+RUN dpkg -i libffi6_3.2.1-8_amd64.deb
 RUN apt install -y pip cmake git ninja-build clang-format
-RUN pip3 install conan
+RUN pip3 install conan --break-system-packages
 
 # 
 # Setup environment variables for CMake compiler detection and some symbolic links
