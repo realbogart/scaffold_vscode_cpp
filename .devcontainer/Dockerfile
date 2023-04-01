@@ -1,4 +1,13 @@
-FROM debian:bookworm-slim
+FROM debian:bullseye-slim
+
+#
+# Update the sources list
+#
+
+RUN echo "deb http://ftp.se.debian.org/debian bullseye main" > /etc/apt/sources.list && \
+    echo "deb-src http://ftp.se.debian.org/debian bullseye main" >> /etc/apt/sources.list && \
+    echo "deb http://security.debian.org/debian-security bullseye-security main" >> /etc/apt/sources.list && \
+    echo "deb-src http://security.debian.org/debian-security bullseye-security main" >> /etc/apt/sources.list
 
 # 
 # Install latest clang
@@ -23,8 +32,8 @@ RUN apt update
 
 RUN wget http://mirrors.kernel.org/ubuntu/pool/main/libf/libffi/libffi6_3.2.1-8_amd64.deb
 RUN dpkg -i libffi6_3.2.1-8_amd64.deb
-RUN apt install -y pip cmake git ninja-build clang-format
-RUN pip3 install conan --break-system-packages
+RUN apt install -y python3-pip cmake git ninja-build clang-format-11
+RUN pip3 install conan
 
 # 
 # Setup environment variables for CMake compiler detection and some symbolic links
